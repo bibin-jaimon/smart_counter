@@ -3,7 +3,6 @@ import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
 const UIButton = (props) => {
   const {onPressIn, onPressOut, text} = props;
-
   return (
     <TouchableOpacity onPressIn={onPressIn} onPressOut={onPressOut}>
       <View style={styles.container}>

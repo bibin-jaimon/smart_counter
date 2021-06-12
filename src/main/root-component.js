@@ -1,7 +1,10 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, StatusBar, View} from 'react-native';
 import UICounter from '../component/ui-counter';
-
+/**
+ * App's Enty point
+ * @returns Initial component
+ */
 const RootComponent = () => {
   return (
     <>

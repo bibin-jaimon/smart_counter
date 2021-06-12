@@ -10,11 +10,13 @@ const incrementerSign = '+';
 const UICounter = ({initialValue = 0, step = 1}) => {
   const [count, setCount] = React.useState(initialValue);
 
+  //Function to clear the timer instance
   const onPressOut = () => {
     clearInterval(timer);
     isSinglePress = true;
   };
 
+  //Callback when increment button press out
   const onPressOutIncrementer = () => {
     if (isSinglePress) {
       incrementer();
@@ -22,6 +24,7 @@ const UICounter = ({initialValue = 0, step = 1}) => {
     onPressOut();
   };
 
+  //Callback when decrement button press out
   const onPressOutDecrementer = () => {
     if (isSinglePress) {
       decrementer();
@@ -29,6 +32,7 @@ const UICounter = ({initialValue = 0, step = 1}) => {
     onPressOut();
   };
 
+  //Start a timer when press the counter update buttons
   const onPressIn = (callback) => {
     timer = setInterval(() => {
       isSinglePress = false;
@@ -36,10 +40,12 @@ const UICounter = ({initialValue = 0, step = 1}) => {
     }, 2000);
   };
 
+  //Increment counter value
   const incrementer = () => {
     setCount((count) => count + step);
   };
 
+  //Decrement counter value
   const decrementer = () => {
     setCount((count) => count - step);
   };
