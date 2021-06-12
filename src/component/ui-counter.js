@@ -65,16 +65,17 @@ const UICounter = ({initialValue = 0, step = 1}) => {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: 'black',
     flexDirection: 'column',
   },
   counterTextContainer: {
-    height: 300,
+    flex: 2,
     justifyContent: 'center',
     alignItems: 'center',
   },
   counterText: {
-    fontSize: 200,
+    fontSize: 250,
     color: 'white',
   },
 });

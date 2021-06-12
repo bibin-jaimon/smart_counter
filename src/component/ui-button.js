@@ -15,14 +15,15 @@ const UIButton = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    borderBottomColor: 'gray',
-    backgroundColor: 'red',
-    borderBottomWidth: 5,
-    justifyContent: 'center',
+    borderColor: 'gray',
+    backgroundColor: 'black',
+    borderWidth: 5,
+    borderRadius: 10,
     alignItems: 'center',
+    paddingBottom: 20,
   },
   text: {
-    fontSize: 170,
+    fontSize: 150,
     color: 'white',
   },
 });
