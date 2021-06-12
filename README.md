@@ -1,5 +1,7 @@
 # A simple counter application
 
+React native version: "0.63.4"
+
 1. Counter: One Numeric counter displaying current counter value
    
 1. Increment Button:
