@@ -37,7 +37,7 @@ const UICounter = ({initialValue = 0, step = 1}) => {
     timer = setInterval(() => {
       isSinglePress = false;
       callback();
-    }, 2000);
+    }, 200);
   };
 
   //Increment counter value
